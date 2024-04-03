@@ -1,91 +1,42 @@
-*** Bill of Materials
+# Project: Replication of Michael L. Anderson's "The Benefits of College Athletic Success: An Application of the Propensity Score Design"
 
-File:							Description:
-README.txt						This "read me" text file
-generate tables.do				Stata code to read in analytic datasets and generate all main and appendix tables
-covers_data.dta					Analytic Stata dataset containing data on college football games (righthand side variables)
-college data.dta				Analytic Stata dataset containing data on college outcomes (lefthand side variables)
-import college data.do			Stata code to generate analytic dataset "college data.dta" from raw VSE, IPEDS, and US News data
-import football data.do			Stata code to generate analytic dataset "covers_data.dta" from raw Covers data
-Raw Data.tar.gz					Raw IPEDS, US News, VSE, and Covers data and associated processing .do files and crosswalks
+## Overview
+This project seeks to replicate and validate the findings of Michael L. Anderson's influential study on the causal relationship between college football success and various institutional outcomes such as donations, applications, enrollment, and academic performance. Anderson's work employs sophisticated statistical techniques to explore these dynamics, highlighting significant positive impacts of athletic success on institutional metrics. Our study aims to apply Python for data analysis to re-examine these findings.
 
-*** Data Sources
+## Data Files
+The data files uploaded to this repository include:
+- `college data.dta`
+- `covers_data.dta`
+- `generate tables.do`
+- `import college data.do`
+- `import football data.do`
 
-Covers - http://www.covers.com/
-Voluntary Support of Education (VSE) - http://vse.cae.org/
-Integrated Postsecondary Education Data System (IPEDS) - http://nces.ed.gov/ipeds/
-US News and World Report (US News) - N/A (downloaded through library e-resources)
+### Data Tables
+The data table files are in Stata format (.dta), detailing the processing steps and manipulations required for the analysis.
 
-*** Data Dictionary For Analytic Datasets (relevant variables)
+### College Data Summary
+The "College Data" dataset covers various aspects of colleges and universities, including:
+- **Institutional Information**: Names, cities, states, and control type (public/private).
+- **Admissions Data**: Application, acceptance, and enrollment numbers by gender, along with SAT and ACT score ranges.
+- **Donations and Financials**: Details on alumni donations, including rates and amounts, as well as donations for athletics and other areas.
+- **Academic Metrics**: US News scores and rankings, academic reputation scores, and percentages of students from top high school percentiles.
+- **Demographic Information**: Racial/ethnic composition of the student body.
 
-Variable Name:				Source:		Description:
+### Covers Data Summary
+The "Covers Data" dataset focuses on college football games, particularly from a betting perspective, and includes:
+- **Game Details**: Dates, teams involved, and the scores.
+- **Betting Information**: Bookmaker lines (spreads), over/under scores, and the actual spread between teams' scores.
+- **Outcomes**: Whether the team won or lost, and if there was a tie.
 
-* Dataset: college data.dta (level of observations is the college-by-year)
+## Python Analysis
+Utilizing Python libraries such as Pandas, NumPy, and StatsModels, this replication focuses on applying propensity score matching and regression analysis to estimate the causal effects of college football success. The analysis involves creating a propensity score model based on bookmaker spreads to match winning and losing teams, thereby isolating the effect of football success from other factors.
 
-teamname        			N/A			College name                  
-year            			N/A			Year (in which outcomes are measured)
-acceptance_rate 			US News     Acceptance rate (percentage points)           
-usnews_academic_rep_new 	US News     US News academic reputation score            
-alumni_ops_athletics		VSE			Alumni donations to athletic current operations (dollars, FY)
-alumni_ops_total			VSE			Alumni donations to current operations, all categories (dollars, FY)
-alumni_total_giving			VSE			Total alumni donations (dollars, FY)
-athletics_total				VSE         Total donations to athletics (dollars, FY)
-ops_athletics_total_grand	VSE			Total donations to athletic current operations (dollars, FY)
-total_giving_pre_2004		VSE			Total donations, pre-2004 (dollars, FY)
-appdate         			IPEDS		Fall reporting period for IPEDS applicants and admissions (1 = Enrolled Fall lagged year, 2 = Enrolled Fall current year, negative values missing)
-applicants_male				IPEDS       First-time first-year degree-seeking applicants - Men (number)
-applicants_female			IPEDS		First-time first-year degree-seeking applicants - Women (number)
-enrolled_male				IPEDS		First-time first-year degree-seeking men enrolled full-time (number)
-enrolled_female				IPEDS		First-time first-year degree-seeking women enrolled full-time (number)
-satdate						IPEDS		Fall reporting period for SAT/ACT test scores (1 = Enrolled Fall of previous year, 2 = Enrolled Fall of current year, negative values = missing)
-satvr25						IPEDS		SAT I Verbal 25th percentile score (points)
-satvr75						IPEDS 		SAT 1 Verbal 75th percentile score (points)
-satmt25						IPEDS		SAT 1 Math 25th percentile score (points)
-satmt75						IPEDS		SAT 1 Math 75th percentile score (points)
-control						IPEDS       University type (1 = Public, 2 = Private)
-black						IPEDS		Percent Black, non-Hispanic (percentage points)
-asian						IPEDS		Percent Asian/Pacific Islander (points)
-hispanic					IPEDS		Percent Hispanic (points)
-vse_alum_giving_rate        VSE			VSE alumni giving rate (alumni donors/alumni of record)
-first_time_students_total	IPEDS		First-time first-year students 
-first_time_outofstate		IPEDS		First-time first-year students from out-of-state
-first_time_instate 			IPEDS		First-time first-year students from in-state
+## Note
+This replication study is conducted for educational purposes, aiming to apply and validate the methodologies used by Anderson in examining the impacts of college athletic success. It provides an opportunity for hands-on experience with causal inference techniques in observational data.
 
-* Dataset: covers_data.dta (level of observation is the game)
+## Link to Colab notebook
 
-teamname	    			N/A			College name            
-bcs      					N/A			BCS conference team (1 = yes, 0 = no)
-team            			N/A			Numerical team identifier               
-opponent					Covers		Team's opponent (numerical identifier or team name)              
-line						Covers		Betting line (points)            
-overunder					Covers		Over-under on total points scored (points)              
-ownscore					Covers		Actual points scored by team (points)            
-opponentscore				Covers		Actual points scored by team's opponent (points)
-vseteamname					VSE			VSE college name (for merge purposes)             
-date						Covers		Date of game (day month year)			                  
-day							Covers		Day of game
-month						Covers		Month of game          
-year						Covers		Year of game
-season						Covers		Football of season of game (season==year unless game occurs in January)              
-realspread					N/A			Actual difference in scores between team and its opponent (points)
-win							N/A			Indicator for team winning (1 = won, 0 = did not win)
-tie							N/A			Indicator for team tying (1 = tied, 0 = did not tie)
 
-*** Software version on which code was tested:
+## Link to Paper and Data Files
+For reference to the original study and access to the datasets used in this replication, please visit [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ASXOBS).
 
-Stata/MP 13.1 running on Mac OS X El Capitan 10.11.2
-
-*** Instructions to reproduce tables:
-
-1. Update Line 1 in "generate tables.do" to cd to the local directory containing "covers_data.dta" and "college data.dta".
-2. Execute code from Line 1 to "TABLE CODE" comment (approximately Line 1718). This part of the code processes the data and defines the programs that get called to generate most of the individual table results.
-3. Execute code for each table separately. Results will appear in Stata Browser window.
-4. Please see the special note in the code for reproducing Table 7. Reproducing all of Table A1 requires running the code when setting the "unexpected wins" to 0 and when setting it to 1.
-
-*** Instructions to reproduce analytic datasets ("covers_data.dta" and "college data.dta") from raw data:
-
-1. Unpack "Raw Data.tar.gz" archive.
-2. Update Lines 1 in "import college data.do" and "import football data.do" to cd to the local directory containing "Raw College Data" and "Raw Football Data".
-3. NOTE: It is *critical* to maintain the original directory and subdirectory structure in "Raw College Data" and "Raw Football Data". Changes to this structure will likely cause the code listed below to fail to properly execute.
-4. Execute "import college data.do".
-5. Execute "import football data.do".
