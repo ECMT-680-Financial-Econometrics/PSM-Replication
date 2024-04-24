@@ -38,3 +38,6 @@ This replication study is conducted for educational purposes, aiming to apply an
 ## Link to Paper and Data Files
 For reference to the original study and access to the datasets used in this replication, please visit [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ASXOBS).
 
+## Link to Presentation Files
+https://docs.google.com/presentation/d/1izyNkTTR634ye9lQSorWV7mgFgMZGVNq/edit?usp=sharing&ouid=106975341459544501752&rtpof=true&sd=true
+
