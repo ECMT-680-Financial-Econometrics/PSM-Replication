@@ -31,13 +31,13 @@ Using Python libraries such as Pandas, NumPy, and StatsModels, this study first 
 ## Note
 This replication study is conducted for educational purposes, aiming to apply and validate the methodologies used by Anderson in examining the impacts of college athletic success. It provides an opportunity for hands-on experience with causal inference techniques in observational data.
 
-## Link to Colab notebook
+## Link to Colab Reaplication notebook
 [Link to Google Colab](https://colab.research.google.com/drive/1b0X3uAkiVyGJPw1SmWUoTwFphuU8opfU?authuser=2#scrollTo=sVRi7dJbp73Y)
 
 
 ## Link to Paper and Data Files
 For reference to the original study and access to the datasets used in this replication, please visit [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ASXOBS).
 
-## Link to Presentation Files
-https://docs.google.com/presentation/d/1izyNkTTR634ye9lQSorWV7mgFgMZGVNq/edit?usp=sharing&ouid=106975341459544501752&rtpof=true&sd=true
-
+## Link to PSM Machine Learning Colab
+[https://docs.google.com/presentation/d/1izyNkTTR634ye9lQSorWV7mgFgMZGVNq/edit?usp=sharing&ouid=106975341459544501752&rtpof=true&sd=true
+](https://colab.research.google.com/drive/1HR3c7cwMA3ZgBUK-DcXSK2X3ACdooOZl?usp=sharing)
