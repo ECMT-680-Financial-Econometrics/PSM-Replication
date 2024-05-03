@@ -25,19 +25,23 @@ The "Covers Data" dataset focuses on college football games, particularly from a
 - **Betting Information**: Bookmaker lines (spreads), over/under scores, and the actual spread between teams' scores.
 - **Outcomes**: Whether the team won or lost, and if there was a tie.
 
+### Generate Tables
+The file "generate_tables.do" was used to compare code analyis.
+
 ## Python Analysis
-Using Python libraries such as Pandas, NumPy, and StatsModels, this study first focuses on replicating the analyses originally carried out in Stata in Python. Subsequently, machine learning algorithms including Lasso, Random Forest, and Gradient Boosting are employed to enhance the outcomes of the study, improving regression and propensity score estimation to observe their impact on the author's conclusions.
+Using Python libraries such as Pandas, NumPy, and StatsModels, this study first focuses on replicating the analyses originally carried out in Stata in Python. Subsequently, machine learning algorithms like ridge regression is employed to enhance the outcomes of the study, improving regression and propensity score estimation to observe their impact on the author's conclusions. The replicaation includes the STE Table 2 and STE Table 3.
 
 ## Note
 This replication study is conducted for educational purposes, aiming to apply and validate the methodologies used by Anderson in examining the impacts of college athletic success. It provides an opportunity for hands-on experience with causal inference techniques in observational data.
 
 ## Link to Colab Reaplication notebook
-[Link to Google Colab](https://colab.research.google.com/drive/1b0X3uAkiVyGJPw1SmWUoTwFphuU8opfU?authuser=2#scrollTo=sVRi7dJbp73Y)
-
+[Link to Google Colab]([https://colab.research.google.com/drive/1b0X3uAkiVyGJPw1SmWUoTwFphuU8opfU?authuser=2#scrollTo=sVRi7dJbp73Y](https://colab.research.google.com/drive/1tKJ6iimlCVpmPOPW0nMZ6iHfzbTZu6tP?authuser=1#scrollTo=-GjTvw_q7sQP))
+Open file and begin running at code chunk 1 (instructions within collab as comments to understand the code)
 
 ## Link to Paper and Data Files
 For reference to the original study and access to the datasets used in this replication, please visit [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ASXOBS).
 
 ## Link to PSM Machine Learning Colab
 [https://docs.google.com/presentation/d/1izyNkTTR634ye9lQSorWV7mgFgMZGVNq/edit?usp=sharing&ouid=106975341459544501752&rtpof=true&sd=true
-](https://colab.research.google.com/drive/1HR3c7cwMA3ZgBUK-DcXSK2X3ACdooOZl?usp=sharing)
+]([https://colab.research.google.com/drive/1HR3c7cwMA3ZgBUK-DcXSK2X3ACdooOZl?usp=sharing](https://colab.research.google.com/drive/1WX1UsRDY-IrkP2XQ2NkOhlufixzMn_kY?authuser=1#scrollTo=YXrB4Gl28jI2))
+Open file and begin running at code chunk 1 (instructions within collab as comments to understand the code)
