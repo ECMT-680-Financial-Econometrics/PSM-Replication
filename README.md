@@ -26,7 +26,7 @@ The "Covers Data" dataset focuses on college football games, particularly from a
 - **Outcomes**: Whether the team won or lost, and if there was a tie.
 
 ### Generate Tables
-The file "generate_tables.do" was used to compare code analyis.
+The file "generate_tables.do" was used to compare code analyis. The files will be in the Replication notebook in the first text chunk.
 
 ## Python Analysis
 Using Python libraries such as Pandas, NumPy, and StatsModels, this study first focuses on replicating the analyses originally carried out in Stata in Python. Subsequently, machine learning algorithms like ridge regression is employed to enhance the outcomes of the study, improving regression and propensity score estimation to observe their impact on the author's conclusions. The replicaation includes the STE Table 2 and STE Table 3.
