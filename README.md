@@ -34,11 +34,11 @@ It provides an opportunity for hands-on experience with causal inference techniq
 
 ## Link to Colab Replication notebook
 Open file and begin running at code chunk 1 (instructions within collab as comments to understand the code)
-[Link to Google Colab](https://colab.research.google.com/drive/1b0X3uAkiVyGJPw1SmWUoTwFphuU8opfU?usp=sharing)
+[https://colab.research.google.com/drive/1lnZIYwjHLDVFJ7G4QZd6TFXzudP8WD-y?usp=sharing](https://colab.research.google.com/drive/1lnZIYwjHLDVFJ7G4QZd6TFXzudP8WD-y?usp=sharing)
 
 ## Link to PSM Machine Learning Colab
 Open file and begin running at code chunk 1 (instructions within collab as comments to understand the code)
-[Google Colab Link](https://colab.research.google.com/drive/1WX1UsRDY-IrkP2XQ2NkOhlufixzMn_kY?usp=sharing)
+[https://colab.research.google.com/drive/1V_JBvGVVLKUVqcfFt33ILagjNc19sXKG?usp=sharing](https://colab.research.google.com/drive/1V_JBvGVVLKUVqcfFt33ILagjNc19sXKG?usp=sharing)
 
 ## Link to Overleaf
 [Link to Overleaf project](https://www.overleaf.com/project/662f06c16f1ddc6ec3689f62)
