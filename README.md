@@ -1,7 +1,7 @@
 # Project: Replication of Michael L. Anderson's "The Benefits of College Athletic Success: An Application of the Propensity Score Design"
 
 ## Overview
-This project seeks to replicate and validate the findings of Michael L. Anderson's influential study on the causal relationship between college football success and various institutional outcomes such as donations, applications, enrollment, and academic performance. Anderson's work employs sophisticated statistical techniques to explore these dynamics, highlighting significant positive impacts of athletic success on institutional metrics. Our study aims to apply Python for data analysis to re-examine these findings.
+This project aims to replicate and validate Michael L. Anderson's influential study on the causal relationship between college football success and institutional outcomes like donations, applications, enrollment, and academic performance. Anderson's research employs advanced statistical methods, demonstrating substantial positive effects of athletic success on institutional metrics. While Anderson's study was conducted using STATA, this project intends to re-examine these findings using Python for data analysis.
 
 ## Data Files
 The data files uploaded to this repository include:
@@ -9,7 +9,7 @@ The data files uploaded to this repository include:
 - `covers_data.dta`
 
 ### Data Tables
-The data table files are in Stata format (.dta), detailing the processing steps and manipulations required for the analysis.
+The data table files are in Stata format (.dta).
 
 ### College Data Summary
 The "College Data" dataset covers various aspects of colleges and universities, including:
@@ -29,10 +29,13 @@ The "Covers Data" dataset focuses on college football games, particularly from a
 The file "generate_tables.do" was used to compare code analyis. The files will be in the Replication notebook in the first text chunk.
 
 ## Python Analysis
-Using Python libraries such as Pandas, NumPy, and StatsModels, this study first focuses on replicating the analyses originally carried out in Stata in Python. Subsequently, machine learning algorithms like ridge regression is employed to enhance the outcomes of the study, improving regression and propensity score estimation to observe their impact on the author's conclusions. The replicaation includes the STE Table 2 and STE Table 3.
+Using Python libraries such as Pandas, NumPy, and StatsModels, this study first focuses on replicating the analyses originally carried out in Stata in Python.
+Subsequently, machine learning algorithms like ridge regression is employed to enhance the outcomes of the study, improving regression and propensity score estimation to observe their impact on the author's conclusions.
+The replicaation includes the STE Table 2 and STE Table 3.
 
 ## Note
-This replication study is conducted for educational purposes, aiming to apply and validate the methodologies used by Anderson in examining the impacts of college athletic success. It provides an opportunity for hands-on experience with causal inference techniques in observational data.
+This replication study is conducted for educational purposes, aiming to apply and validate the methodologies used by Anderson in examining the impacts of college athletic success.
+It provides an opportunity for hands-on experience with causal inference techniques in observational data.
 
 ## Link to Colab Reaplication notebook
 [Link to Google Colab]([https://colab.research.google.com/drive/1b0X3uAkiVyGJPw1SmWUoTwFphuU8opfU?authuser=2#scrollTo=sVRi7dJbp73Y](https://colab.research.google.com/drive/1tKJ6iimlCVpmPOPW0nMZ6iHfzbTZu6tP?authuser=1#scrollTo=-GjTvw_q7sQP))
