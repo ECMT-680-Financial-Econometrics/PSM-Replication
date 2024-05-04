@@ -33,11 +33,11 @@ This replication study is conducted for educational purposes, aiming to apply an
 It provides an opportunity for hands-on experience with causal inference techniques in observational data.
 
 ## Link to Colab Replication notebook
-Open file and begin running at code chunk 1 (instructions within collab as comments to understand the code)
+Open file and begin running from first line (Comments included to understand the code)
 [https://colab.research.google.com/drive/1lnZIYwjHLDVFJ7G4QZd6TFXzudP8WD-y?usp=sharing](https://colab.research.google.com/drive/1lnZIYwjHLDVFJ7G4QZd6TFXzudP8WD-y?usp=sharing)
 
 ## Link to PSM Machine Learning Colab
-Open file and begin running at code chunk 1 (instructions within collab as comments to understand the code)
+You have to first download the .dta files on your local drive, and then upload them to Colab before you can run the code in the ML section.
 [https://colab.research.google.com/drive/1V_JBvGVVLKUVqcfFt33ILagjNc19sXKG?usp=sharing](https://colab.research.google.com/drive/1V_JBvGVVLKUVqcfFt33ILagjNc19sXKG?usp=sharing)
 
 ## Link to Overleaf
