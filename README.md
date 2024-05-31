@@ -32,16 +32,5 @@ The results of the Standardized Treatment Effects (STE) presented in Table 2 and
 This replication study is conducted for educational purposes, aiming to apply and validate the methodologies used by Anderson in examining the impacts of college athletic success.
 It provides an opportunity for hands-on experience with causal inference techniques in observational data.
 
-## Link to Colab Replication notebook
-Open file and begin running from first line (Comments included to understand the code)
-[https://colab.research.google.com/drive/1lnZIYwjHLDVFJ7G4QZd6TFXzudP8WD-y?usp=sharing](https://colab.research.google.com/drive/1lnZIYwjHLDVFJ7G4QZd6TFXzudP8WD-y?usp=sharing)
-
-## Link to PSM Machine Learning Colab
-You have to first download the .dta files on your local drive, and then upload them to Colab before you can run the code in the ML section.
-[https://colab.research.google.com/drive/1V_JBvGVVLKUVqcfFt33ILagjNc19sXKG?usp=sharing](https://colab.research.google.com/drive/1V_JBvGVVLKUVqcfFt33ILagjNc19sXKG?usp=sharing)
-
-## Link to Overleaf
-[Link to Overleaf project](https://www.overleaf.com/project/662f06c16f1ddc6ec3689f62)
-
 ## Link to Paper and Data Files
 For reference to the original study and access to the datasets used in this replication, please visit [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ASXOBS).
